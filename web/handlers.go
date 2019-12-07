@@ -299,7 +299,7 @@ const graphPage = `<!DOCTYPE>
 		    }
 		    
 		    function connect() {
-				var ws = new WebSocket('ws://localhost:8080/api/graphs/'+graphID);
+				var ws = new WebSocket('ws://'+location.host+'/api/graphs/'+graphID);
 				
 				ws.onmessage = function(e) {
 					var msg = JSON.parse(e.data);
