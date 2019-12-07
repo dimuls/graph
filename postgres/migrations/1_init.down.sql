@@ -1,0 +1,3 @@
+DROP TABLE edge;
+DROP TABLE vertex;
+DROP TABLE graph;
